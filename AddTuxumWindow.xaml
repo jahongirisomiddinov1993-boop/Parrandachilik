@@ -1,0 +1,78 @@
+﻿<Window x:Class="Parrandachilik.AddTuxumWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tuxumlar hisoboti kiritish" Height="650" Width="550" Background="#F0F0F0" WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,0,0,20">
+            <TextBlock Text="Tuxumlar nazorati" FontSize="20" FontWeight="Bold" Margin="0,0,0,15" HorizontalAlignment="Center"/>
+            <TextBlock Text="Sana:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5" HorizontalAlignment="Center"/>
+            <DatePicker x:Name="dpSana" Width="180" Height="35" BorderBrush="#007ACC" BorderThickness="1.5" />
+        </StackPanel>
+
+        <Grid Grid.Row="1" Margin="0,0,0,15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Hodim FISH:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtXodim" Height="35" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2">
+                <TextBlock Text="Sex nomi:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtSexNomi" Height="35" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="1,6 kg:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txt16" Height="35" Margin="0,0,0,10" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+
+                <TextBlock Text="1,7 kg:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txt17" Height="35" Margin="0,0,0,10" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+
+                <TextBlock Text="1,8 kg:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txt18" Height="35" Margin="0,0,0,10" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+
+                <TextBlock Text="Siniq:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtSiniq" Height="35" Margin="0,0,0,10" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2">
+                <TextBlock Text="1,9 kg:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txt19" Height="35" Margin="0,0,0,10" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+
+                <TextBlock Text="2,0 kg:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txt20" Height="35" Margin="0,0,0,10" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+
+                <TextBlock Text="2,5 kg:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txt25" Height="35" Margin="0,0,0,10" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+
+                <TextBlock Text="Paket:" FontWeight="SemiBold" Foreground="#444" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtPaket" Height="35" Margin="0,0,0,10" Padding="5" BorderBrush="#007ACC" BorderThickness="1.5"/>
+            </StackPanel>
+        </Grid>
+
+        <Button Grid.Row="3" x:Name="btnSaqlash" Content="SAQLASH" Click="btnSaqlash_Click" 
+                Height="45" Background="#28A745" Foreground="White" FontWeight="Bold" 
+                Cursor="Hand" BorderThickness="0" Margin="0,15,0,0"/>
+    </Grid>
+</Window>
