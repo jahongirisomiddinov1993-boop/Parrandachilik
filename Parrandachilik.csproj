@@ -51,6 +51,10 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+
+		<!-- Printer bilan ishlash uchun qo'shilgan kutubxonalar -->
+		<Reference Include="System.Printing" />
+		<Reference Include="ReachFramework" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
